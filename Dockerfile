@@ -9,6 +9,7 @@ ARG http_port=8080
 COPY ${jar_file} app.jar
 
 #ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","/app.jar"]
 
 EXPOSE ${http_port}
 
