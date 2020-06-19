@@ -6,8 +6,6 @@
     <groupId>org.springframework</groupId>
     <artifactId>gs-rest-service</artifactId>
     <version>0.1.0</version>
-    <name>xxx-maven</name>
-    <url>http://10.102.28.35:8081/repository/maven-public/</url> 
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -30,12 +28,6 @@
             <artifactId>json-path</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <properties>
@@ -48,26 +40,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-    <plugin>
-      <groupId>org.jacoco</groupId>
-      <artifactId>jacoco-maven-plugin</artifactId>
-      <version>0.7.8</version>
-      <executions>
-        <execution>
-          <goals>
-            <goal>prepare-agent</goal>
-            <goal>report</goal>
-          </goals>
-        </execution>
-      </executions>
-    </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <useSystemClassLoader>false</useSystemClassLoader>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
